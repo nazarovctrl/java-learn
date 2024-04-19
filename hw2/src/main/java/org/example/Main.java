@@ -13,6 +13,6 @@ public class Main {
             directory = new File(path);
         } while (!directory.isDirectory());
 
-        FileScanner.startScan(directory);
+        FileScanner.scanDirectory(directory);
     }
 }
