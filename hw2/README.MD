@@ -11,11 +11,15 @@ This is a Java project
 ### 1. Creating .jar 
 
 ```bash
-mvn install
+mvn package
 ```
 
-### 2. Run jar file
-
+### 2. Run
+Open target folder
 ```bash
-java -jar name_of_jar_file
+cd target
+```
+run .jar file
+```bash
+java -jar hw2-1-jar-with-dependencies.jar
 ```
