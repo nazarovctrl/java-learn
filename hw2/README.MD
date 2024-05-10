@@ -21,5 +21,5 @@ cd target
 ```
 run .jar file
 ```bash
-java -jar hw2-1-jar-with-dependencies.jar
+java -jar hw2-1.jar
 ```
