@@ -5,3 +5,17 @@ This is a Java project
 >
 > - Java 17
 > - Maven
+
+
+## Instructions for running the app
+### 1. Creating .jar 
+
+```bash
+mvn install
+```
+
+### 2. Run jar file
+
+```bash
+java -jar name_of_jar_file
+```
