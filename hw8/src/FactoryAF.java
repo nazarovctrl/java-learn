@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class FactoryAF {
-    private List<Car> carList;
+    private LinkedList<Car> carList;
     private List<Customer> customerList;
     private Integer number = 0;
 
@@ -22,16 +22,17 @@ public class FactoryAF {
 
     public void saleCar() {
         for (Customer customer : customerList) {
-            Car car = carList.get(0);
+            Car car = carList.pollFirst();
             if (car == null) {
+                System.out.println("There is no car to sale");
                 break;
             }
             System.out.println("Car number=" + car.getNumber() + " sold to " + customer.getFullName());
             customer.setCar(car);
-            carList.remove(0);
         }
 
         if (!carList.isEmpty()) {
+            System.out.println(carList.size() + " car/cars removed");
             carList = new LinkedList<>();
         }
     }
