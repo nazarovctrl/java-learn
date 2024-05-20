@@ -33,7 +33,7 @@ public class FactoryAF {
 
         if (!carList.isEmpty()) {
             System.out.println(carList.size() + " car/cars removed");
-            carList = new LinkedList<>();
+            carList.clear();
         }
     }
 }
