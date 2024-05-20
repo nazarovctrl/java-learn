@@ -6,4 +6,12 @@ public class Car {
         this.number = number;
         this.engine = new Engine(engineSize);
     }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
 }

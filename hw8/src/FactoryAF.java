@@ -1,15 +1,18 @@
 import java.util.LinkedList;
+import java.util.List;
 
 public class FactoryAF {
-    private LinkedList<Car> carList;
-    private LinkedList<Customer> customerList;
+    private List<Car> carList;
+    private List<Customer> customerList;
+    private Integer number = 0;
 
     public FactoryAF() {
         this.carList = new LinkedList<>();
         this.customerList = new LinkedList<>();
     }
 
-    public void addCar(Car car) {
+    public void addCar(Integer engineSize) {
+        Car car = new Car(number++, engineSize);
         carList.add(car);
     }
 
@@ -19,11 +22,13 @@ public class FactoryAF {
 
     public void saleCar() {
         for (Customer customer : customerList) {
-            Car car = carList.pollFirst();
+            Car car = carList.get(0);
             if (car == null) {
                 break;
             }
+            System.out.println("Car number=" + car.getNumber() + " sold to " + customer.getFullName());
             customer.setCar(car);
+            carList.remove(0);
         }
 
         if (!carList.isEmpty()) {

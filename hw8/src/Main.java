@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car(1, 2);
-        Car car2 = new Car(2, 2);
+        FactoryAF factoryAF = new FactoryAF();
+        factoryAF.addCar(2);
+        factoryAF.addCar(1);
+
 
         Customer customer = new Customer("Azimjon Nazarov");
-
-        FactoryAF factoryAF = new FactoryAF();
-        factoryAF.addCar(car);
-        factoryAF.addCar(car2);
-
         factoryAF.addCustomer(customer);
 
         factoryAF.saleCar();

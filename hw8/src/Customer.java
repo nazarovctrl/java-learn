@@ -9,4 +9,8 @@ public class Customer {
     public void setCar(Car car) {
         this.car = car;
     }
+
+    public String getFullName() {
+        return fullName;
+    }
 }

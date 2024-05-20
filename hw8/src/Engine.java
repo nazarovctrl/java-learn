@@ -4,4 +4,8 @@ public class Engine {
     public Engine(Integer size) {
         this.size = size;
     }
+
+    public Integer getSize() {
+        return size;
+    }
 }
