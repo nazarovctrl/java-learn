@@ -20,7 +20,6 @@ public class Main {
         factoryAF.saleCar();
         System.out.println("=================== Sale car finished");
 
-
         for (Car car : factoryAF.getCarList()) {
             System.out.println(car);
         }
