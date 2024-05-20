@@ -16,6 +16,17 @@ public class Main {
             System.out.println(customer1);
         }
 
+        System.out.println("=================== Sale car started");
         factoryAF.saleCar();
+        System.out.println("=================== Sale car finished");
+
+
+        for (Car car : factoryAF.getCarList()) {
+            System.out.println(car);
+        }
+
+        for (Customer customer1 : factoryAF.getCustomerList()) {
+            System.out.println(customer1);
+        }
     }
 }
