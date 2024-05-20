@@ -8,6 +8,14 @@ public class Main {
         Customer customer = new Customer("Azimjon Nazarov");
         factoryAF.addCustomer(customer);
 
+        for (Car car : factoryAF.getCarList()) {
+            System.out.println(car);
+        }
+
+        for (Customer customer1 : factoryAF.getCustomerList()) {
+            System.out.println(customer1);
+        }
+
         factoryAF.saleCar();
     }
 }

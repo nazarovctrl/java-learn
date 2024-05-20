@@ -14,4 +14,12 @@ public class Car {
     public Engine getEngine() {
         return engine;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "number=" + number +
+                ", engine=" + engine +
+                '}';
+    }
 }

@@ -36,4 +36,12 @@ public class FactoryAF {
             carList.clear();
         }
     }
+
+    public LinkedList<Car> getCarList() {
+        return carList;
+    }
+
+    public List<Customer> getCustomerList() {
+        return customerList;
+    }
 }
