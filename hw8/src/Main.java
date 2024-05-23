@@ -3,10 +3,13 @@ public class Main {
         FactoryAF factoryAF = new FactoryAF();
         factoryAF.addCar(2);
         factoryAF.addCar(1);
+        factoryAF.addCar(1);
 
 
         Customer customer = new Customer("Azimjon Nazarov");
+        Customer customer2 = new Customer("Azimjon Nazarov");
         factoryAF.addCustomer(customer);
+        factoryAF.addCustomer(customer2);
 
         for (Car car : factoryAF.getCarList()) {
             System.out.println(car);
